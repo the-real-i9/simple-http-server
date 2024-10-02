@@ -31,12 +31,6 @@ user@pc:~/website$ my-http-server
 
 By default, it serves the current folder where it is run (i.e. `.`) as root, and it runs on port `5442`
 
-After running the application you get the message
-
-``` bash
-Live @ http://localhost:5442
-```
-
 ### With flags
 
 The two flags available are `-p`, which you can use to specify a custom port, and `-f`, which you can use to specify the folder you want to serve.
@@ -51,4 +45,10 @@ user@pc:~/website$ my-http-server -p 6544
 
 ```bash
 user@pc:~/website$ my-http-server -f ./about
+```
+
+After running the application you get the message:
+
+``` bash
+Live @ http://localhost:5442
 ```
