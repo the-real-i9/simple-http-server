@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	port := flag.String("p", "5442", "specify listening port")
-	folderPath := flag.String("f", ".", "specify folder to serve")
+	port := flag.String("p", "5442", "specify the listening port")
+	folderPath := flag.String("d", ".", "specify the directory to serve")
 
 	flag.Parse()
 
