@@ -1,6 +1,6 @@
 # simple-http-server
 
-`simple-http-server` is a tool, built in Go, that allows you serve any folder in your local file system over the network.
+`simple-http-server` is a tool, built in Go, that allows you serve any directory in your local file system over the network.
 
 ## Setup
 
@@ -13,7 +13,7 @@
     go build -o $GOBIN/my-http-server
     ```
 
-3. Place the binary in your system `/bin` folder
+3. Place the binary in your system's `/bin` directory
 
     ```bash
     sudo cp $GOBIN/my-http-server /bin
@@ -23,28 +23,28 @@
 
 ### Without flags
 
-Execute the binary in the folder you want to serve.
+Execute the binary in the directory you want to serve.
 
 ```bash
 user@pc:~/website$ my-http-server
 ```
 
-By default, it serves the current folder where it is run (i.e. `.`) as root, and it runs on port `5442`
+By default, it serves the current directory where it is run (i.e. `.`) as root, and it runs on port `5442`
 
 ### With flags
 
-The two flags available are `-p`, which you can use to specify a custom port, and `-f`, which you can use to specify the folder you want to serve.
+The two flags available are `-p`, which you can use to specify a custom port, and `-d`, which you can use to specify the directory you want to serve.
 
-#### Custom port
+#### Specify a Custom Port
 
 ```bash
 user@pc:~/website$ my-http-server -p 6544
 ```
 
-#### Specify folder
+#### Specify Directory
 
 ```bash
-user@pc:~/website$ my-http-server -f ./about
+user@pc:~/website$ my-http-server -d ./about
 ```
 
 After running the application you get the message:
