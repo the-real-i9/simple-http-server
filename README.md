@@ -4,7 +4,7 @@
 
 ## Setup
 
-> I work with Linux. So if you use a different os/arch, perform the equivalent action.
+> I'm in Linux, so if you use a different os/arch, ensure you perform the equivalent action.
 
 1. Clone this Repo
 2. `go build` the source (in your os/arch)
