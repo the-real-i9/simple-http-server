@@ -29,11 +29,11 @@ Execute the binary in the directory you want to serve.
 user@pc:~/website$ my-http-server
 ```
 
-By default, it serves the current directory where it is run (i.e. `.`) as root, and it runs on port `5442`
+By default, it serves the current directory where it is run (i.e. `.`) as root, it runs on port `5442`
 
 ### With flags
 
-The two flags available are `-p`, which you can use to specify a custom port, and `-d`, which you can use to specify the directory you want to serve.
+The two flags available are `-p`, which you use to specify a custom port, and `-d`, which you use to specify the directory you want to serve.
 
 #### Specify a Custom Port
 
@@ -47,8 +47,9 @@ user@pc:~/website$ my-http-server -p 6544
 user@pc:~/website$ my-http-server -d ./about
 ```
 
-After running the application you get the message:
+After running the application you get an active session with the message:
 
 ``` bash
 Live @ http://localhost:5442
 ```
+If you've specified a custom port, it runs on that port instead.
